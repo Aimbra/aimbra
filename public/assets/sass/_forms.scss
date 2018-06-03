@@ -1,0 +1,85 @@
+@import './colors.scss'; 
+
+.btn {
+    padding: 1rem 2rem;
+}
+
+.btn-success {
+    border: {
+        width: 0;
+    }
+    background: {
+        color: $primary;
+    }
+
+    &:hover {
+        background: {
+            color: $primary-hover;
+        }
+    }
+}
+
+.btn-outline-success {
+    border: {
+        color: $primary;
+    }
+    color: $primary;
+
+    &:hover {
+        background: {
+            color: $primary;
+        }
+    }
+}
+
+.custom-select.is-valid,
+.form-control.is-valid,
+.was-validated .custom-select:valid,
+.was-validated .form-control:valid {
+    border: {
+        color: $primary;
+    }
+}
+
+.valid-feedback {
+    color: $primary;
+}
+
+textarea.form-control {
+    height: 150px;
+}
+
+select.custom-select {
+    height: 55px;
+}
+
+input.form-control, textarea.form-control {
+    padding: 1rem;
+}
+
+.form-access {
+    
+    margin: {
+        top: 5rem;
+    }
+
+    p {
+        text-align: center;
+        margin: 0 auto;
+        width: 30%;
+    }
+    
+    
+    .form-area {
+
+        form {
+            padding: {
+                right: 30%;
+                left: 30%;
+            }
+            label {
+                text-align: left;
+            }
+        }
+    }
+}

@@ -1,0 +1,45 @@
+@import './_colors';
+
+main {
+
+}
+
+footer {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+}
+
+header {
+    .dropdown-menu {
+        min-width: 30rem;
+            padding: .5rem 10px;
+    }
+    .dropdown-item {
+        padding: 1.25rem 1.5rem;
+        &:hover {
+            border: {
+                radius: 5px;
+            }
+            background: {
+                color: $primary;
+            }
+            color: #fff;
+
+
+            -webkit-animation: fadein 2s;
+            /* Safari, Chrome and Opera > 12.1 */
+            
+            -moz-animation: fadein 2s;
+            /* Firefox < 16 */
+
+            -ms-animation: fadein 2s;
+            /* Internet Explorer */
+
+            -o-animation: fadein 2s;
+            /* Opera < 12.1 */
+
+            animation: fadein 2s;
+        }
+    }
+}

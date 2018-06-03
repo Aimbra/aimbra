@@ -1,0 +1,47 @@
+@import './colors';
+
+.navbar {
+    
+    background: {
+        color: $blue-dark;
+    }
+
+    padding: 20px 0;
+
+    .navbar-brand img {
+        width: 80%;
+        height: auto;
+        -webkit-filter: brightness(1.2);
+        -moz-filter: brightness(1.2);
+        -ms-filter: brightness(1.2);
+        -o-filter: brightness(1.2);
+        filter: brightness(1.2);
+        &:hover {
+            -webkit-filter: brightness(1.5);
+            -moz-filter: brightness(1.5);
+            -ms-filter: brightness(1.5);
+            -o-filter: brightness(1.5);
+            filter: brightness(1.5);
+        }
+    }
+
+    color: #fff;
+
+    li.nav-item {
+        a.nav-link {
+            color: #fff;
+            &:hover {
+                color: $primary;
+            }
+            
+        }
+    }
+
+    li.active {
+        color: $primary;
+        a {
+            color: $primary;
+        }
+    }
+
+}
