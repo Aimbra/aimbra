@@ -1,0 +1,51 @@
+@import './navbar';
+@import './colors';
+@import './forms';
+@import './fonts';
+@import './template';
+@import './alerts';
+@import './icons';
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+main.home {
+    
+    margin: {
+        top: 100px;
+    }
+
+    figure {
+        img {
+            width: 10%;
+        }
+    }
+
+    h1 {
+        font: {
+            weight: 900;
+        }
+        text: {
+            transform: uppercase;
+        }
+    }
+
+    .social-group {
+        ul {
+            margin: {
+                left: 0;
+                top: -10px;
+            }
+            padding: 0;
+            li {
+                display: inline-block;
+                margin: {
+                    right: 10px;
+                }
+            }
+        }
+    }
+
+}
