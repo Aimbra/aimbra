@@ -1,0 +1,53 @@
+@import url("https://use.typekit.net/sys7rxc.css");
+@import './_colors.scss';
+
+body {
+    font: {
+        family: proxima-nova, sans-serif;
+        style: normal;
+        weight: 100;
+    }
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font: {
+        weight: 700;
+    }
+    color: $blue-dark;
+}
+
+.title-decorator-center {
+    display: inline-block;
+    position: relative;
+    text: {
+        decoration: none;
+    }
+    &::before,
+    &::after {
+        content: "";
+        position: absolute;
+        top: 57%;
+        width: 60%;
+        height: 1px;
+        background-color: $gray-200;
+    }
+    &::before {
+        left: -85%;
+    }
+    &::after {
+        right: -85%;
+    }
+}
+
+p {
+    font: {
+        size: 1.2rem;
+    }
+}
+
+a {
+    color: $primary;
+    &:hover {
+        color: $primary-hover;
+    }
+}

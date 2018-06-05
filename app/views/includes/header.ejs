@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Aimbra - Login System</title>
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
+        crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.5.2/animate.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <section class="container">
+                <a class="navbar-brand" href="/">
+                    <picture>
+                        <source srcset="img/logo-expand.png" media="(min-width: 1024px)">
+                        <img src="img/brand.png" alt="Brand da Aimbra softwares">
+                    </picture>
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ml-auto mr-3">
+                        <!-- <li class="nav-item active"><a class="nav-link" href="about.html">About</a></li>
+                        <li class="nav-item"><a class="nav-link" href="contact.html">Suport</a></li> -->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
+                                aria-expanded="false">
+                                Menu
+                            </a>
+                            <div class="dropdown-menu animated bounceInDown" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="/about">About</a>
+                                <a class="dropdown-item" href="/contact">Contact</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="/contact">Suport</a>
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="form-inline my-2 my-lg-0">
+                        <button class="btn btn-outline-success my-2 my-sm-0 mr-3" onclick="javascript: window.location.href ='/signin'">Login</button>
+                        <button class="btn btn-success my-2 my-sm-0" onclick="javascript: window.location.href ='/signup'">Register</button>
+                    </div>
+                </div>
+            </section>
+        </nav>
+    </header>

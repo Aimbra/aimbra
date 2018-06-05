@@ -6,6 +6,11 @@
 @import './alerts';
 @import './icons';
 
+* {
+    margin: 0;
+    padding: 0;
+}
+
 main.home {
     
     margin: {
