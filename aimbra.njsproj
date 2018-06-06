@@ -1,0 +1,133 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{bfbd4b46-eb0b-4dcc-85f7-36c140a19ba3}</ProjectGuid>
+    <ProjectHome />
+    <ProjectView>ShowAllFiles</ProjectView>
+    <StartupFile>app.js</StartupFile>
+    <WorkingDirectory>.</WorkingDirectory>
+    <OutputPath>.</OutputPath>
+    <ProjectTypeGuids>{3AF33F2E-1136-4D97-BBB7-1795711AC8B8};{349c5851-65df-11da-9384-00065b846f21};{9092AA53-FB77-4645-B42D-1CCCA6BD08BD}</ProjectTypeGuids>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">14.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+    <LastActiveSolutionConfig>Debug|Any CPU</LastActiveSolutionConfig>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)' == 'Debug'" />
+  <PropertyGroup Condition="'$(Configuration)' == 'Release'" />
+  <ItemGroup>
+    <Content Include="package-lock.json" />
+    <Content Include="package.json" />
+    <Content Include="README.md" />
+    <Compile Include="app.js" />
+    <Compile Include="config\mail.js" />
+    <Compile Include="config\server.js" />
+    <Compile Include="app\routes\about.js" />
+    <Compile Include="app\routes\contact.js" />
+    <Compile Include="app\routes\home.js" />
+    <Compile Include="app\routes\signin.js" />
+    <Compile Include="app\routes\signup.js" />
+    <Content Include="app\public\css\forms.css" />
+    <Content Include="app\public\css\icons.css" />
+    <Content Include="app\public\css\index.css" />
+    <Content Include="app\public\css\sign.css" />
+    <Content Include="app\public\css\style.css" />
+    <Content Include="app\public\img\brand.png" />
+    <Content Include="app\public\img\favicon.png" />
+    <Content Include="app\public\img\logo-expand.png" />
+    <Content Include="app\public\img\logo.png" />
+    <Content Include="app\public\img\brand.svg" />
+    <Content Include="app\public\img\logo.svg" />
+    <Compile Include="app\public\js\script.js" />
+    <Content Include="app\public\libs\animate.css" />
+    <Content Include="app\views\about\about.ejs" />
+    <Content Include="app\views\contact\contact.ejs" />
+    <Content Include="app\views\home\index.ejs" />
+    <Content Include="app\views\includes\footer.ejs" />
+    <Content Include="app\views\includes\head.ejs" />
+    <Content Include="app\views\includes\header.ejs" />
+    <Content Include="app\views\security\signin.ejs" />
+    <Content Include="app\views\security\signup.ejs" />
+    <Content Include="public\assets\css\forms.css" />
+    <Content Include="public\assets\css\icons.css" />
+    <Content Include="public\assets\css\index.css" />
+    <Content Include="public\assets\css\sign.css" />
+    <Content Include="public\assets\img\brand.png" />
+    <Content Include="public\assets\img\favicon.png" />
+    <Content Include="public\assets\img\logo-expand.png" />
+    <Content Include="public\assets\img\logo.png" />
+    <Content Include="public\assets\img\brand.svg" />
+    <Content Include="public\assets\img\logo.svg" />
+    <Content Include="public\assets\libs\animate.css" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="aimbra" />
+    <Folder Include="aimbra\aimbra" />
+    <Folder Include="app" />
+    <Folder Include="app\public" />
+    <Folder Include="app\public\css" />
+    <Folder Include="app\public\img" />
+    <Folder Include="app\public\js" />
+    <Folder Include="app\public\libs" />
+    <Folder Include="app\public\sass" />
+    <Folder Include="app\routes" />
+    <Folder Include="app\views" />
+    <Folder Include="app\views\about" />
+    <Folder Include="app\views\contact" />
+    <Folder Include="app\views\home" />
+    <Folder Include="app\views\includes" />
+    <Folder Include="app\views\models" />
+    <Folder Include="app\views\security" />
+    <Folder Include="config" />
+    <Folder Include="public" />
+    <Folder Include="public\assets" />
+    <Folder Include="public\assets\app" />
+    <Folder Include="public\assets\css" />
+    <Folder Include="public\assets\img" />
+    <Folder Include="public\assets\libs" />
+    <Folder Include="public\assets\sass" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.Common.targets" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <!--Do not delete the following Import Project.  While this appears to do nothing it is a marker for setting TypeScript properties before our import that depends on them.-->
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.targets" Condition="False" />
+  <Import Project="$(VSToolsPath)\Node.js Tools\Microsoft.NodejsTools.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>0</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:48022/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>True</UseCustomServer>
+          <CustomServerUrl>http://localhost:1337</CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}" User="">
+        <WebProjectProperties>
+          <StartPageUrl>
+          </StartPageUrl>
+          <StartAction>CurrentPage</StartAction>
+          <AspNetDebugging>True</AspNetDebugging>
+          <SilverlightDebugging>False</SilverlightDebugging>
+          <NativeDebugging>False</NativeDebugging>
+          <SQLDebugging>False</SQLDebugging>
+          <ExternalProgram>
+          </ExternalProgram>
+          <StartExternalURL>
+          </StartExternalURL>
+          <StartCmdLineArguments>
+          </StartCmdLineArguments>
+          <StartWorkingDirectory>
+          </StartWorkingDirectory>
+          <EnableENC>False</EnableENC>
+          <AlwaysStartWebServerOnDebug>False</AlwaysStartWebServerOnDebug>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

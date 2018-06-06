@@ -1,0 +1,3 @@
+D:\aimbra\aimbra\obj\Debug\aimbra.njsprojAssemblyReference.cache
+D:\aimbra\aimbra\obj\Debug\aimbra.njsproj.CoreCompileInputs.cache
+D:\aimbra\aimbra\bin\Microsoft.NodejsTools.WebRole.dll

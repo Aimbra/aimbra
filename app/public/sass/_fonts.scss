@@ -16,6 +16,29 @@ h1, h2, h3, h4, h5, h6 {
     color: $blue-dark;
 }
 
+article {
+    h1 {
+        margin: {
+            top: 150px;
+        }
+        line: {
+            height: 8rem;
+        }
+        font: {
+            size: 10rem;
+            weight: 900; 
+        }
+        text: {
+            transform: uppercase;
+        }
+    }
+    p {
+        margin: {
+            bottom: 30px;
+        }
+    }
+}
+
 .title-decorator-center {
     display: inline-block;
     position: relative;
