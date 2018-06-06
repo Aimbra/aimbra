@@ -3,3 +3,10 @@ module.exports = (app) =>
         '/contact',
         (req, resp) => resp.render('contact/contact')
     )
+
+    app.post(
+        '/contact',
+        (req, resp) => {
+            
+        }
+    )

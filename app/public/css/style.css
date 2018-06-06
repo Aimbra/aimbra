@@ -126,13 +126,26 @@ h1, h2, h3, h4, h5, h6 {
   color: #00233d !important;
 }
 
-/* line 19, ../sass/_fonts.scss */
+/* line 20, ../sass/_fonts.scss */
+article h1 {
+  margin-top: 150px;
+  line-height: 8rem;
+  font-size: 10rem;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+/* line 35, ../sass/_fonts.scss */
+article p {
+  margin-bottom: 30px;
+}
+
+/* line 42, ../sass/_fonts.scss */
 .title-decorator-center {
   display: inline-block;
   position: relative;
   text-decoration: none;
 }
-/* line 26, ../sass/_fonts.scss */
+/* line 49, ../sass/_fonts.scss */
 .title-decorator-center::before, .title-decorator-center::after {
   content: "";
   position: absolute;
@@ -141,25 +154,25 @@ h1, h2, h3, h4, h5, h6 {
   height: 1px;
   background-color: gainsboro;
 }
-/* line 34, ../sass/_fonts.scss */
+/* line 57, ../sass/_fonts.scss */
 .title-decorator-center::before {
   left: -85%;
 }
-/* line 37, ../sass/_fonts.scss */
+/* line 60, ../sass/_fonts.scss */
 .title-decorator-center::after {
   right: -85%;
 }
 
-/* line 42, ../sass/_fonts.scss */
+/* line 65, ../sass/_fonts.scss */
 p {
   font-size: 1.2rem;
 }
 
-/* line 48, ../sass/_fonts.scss */
+/* line 71, ../sass/_fonts.scss */
 a {
   color: #00d48d;
 }
-/* line 50, ../sass/_fonts.scss */
+/* line 73, ../sass/_fonts.scss */
 a:hover {
   color: #01ffaa;
 }
@@ -167,7 +180,7 @@ a:hover {
 /* line 7, ../sass/_template.scss */
 footer {
   width: 100%;
-  position: absolute;
+  position: relative;
   bottom: 0;
 }
 
