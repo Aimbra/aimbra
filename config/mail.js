@@ -1,30 +1,47 @@
 const nodemailer = require('nodemailer')
 
+function Mail(userName, userMail, userSubject, userText) {
 
-const myEmailAdress = 'aimbrasoftwares@gmail.com'
+    this.userName = userName
+    this.userMail = userMail
+    this.userSubject = userSubject
+    this.userText = userText
 
-let transporter = nodemailer.createTransport(
-    {
-        service: 'gmail',
-        auth: myEmailAdress,
-        pass: 'aimbras2018.12'
+    const myEmailAdress = 'aimbrasoftwares@gmail.com'
+    
+    this.transporter = nodemailer.createTransport(
+        {
+            service: 'gmail',
+            auth: myEmailAdress,
+            pass: 'aimbras2018.12'
+        }
+    )
+    
+    mailOptions = {
+        from: userMail,
+        to: myEmailAdress,
+        subject: userSubject,
+        text: `
+            Name: ${userName}<br> 
+            Message: ${userText}
+        `
     }
-)
+    
+    this.transporter.sendMail(mailOptions, (error, info) => {
+    
+    })
 
-let mailOptions = {
-    from: userMail,
-    to: myEmailAdress,
-    subject: userSubject,
-    text: `
-        Name: ${userName}<br> 
-        Message: ${userText}
-    `
 }
 
-transporter.sendMail(mailOptions, (error, info) => {
+const mail = new Mail (
+    'Thiago',
+    'grupocodenome@gmail.com',
+    'Orçamento',
+    'Gostaria de solicitar um orçamento pf'
+)
 
-})
 
-let mail = new Mail('Thiago', 'grupocodenome@gmail.com', 'Orçamento', 'Gostaria de conversar com vocês sobre orçamento')
+
+
 console.log(mail)
 
